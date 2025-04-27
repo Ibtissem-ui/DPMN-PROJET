@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title> Evasion-voyage</title>
+   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style1.css">
-  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="assets/Playfair_Display.zip">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
    <header>
-    <!--haut bar-->
       <div class="haut-bar">
       <div class="haut-item"><i class="fas fa-phone"></i> +33 000 000 000</div>
          <div class="haut-item"><i class="fas fa-envelope"></i> evasionvoyage@gmail.com</div>
@@ -22,12 +23,19 @@
        <div class="nav-logo">
           <a href="#"><img src="assets/image/logo-principale.png" alt="logo"class="logo"></a>
        </div>
-    <ul class="nav-left">
-        <li><a href="#">QUI SOMMES-NOUS ?</a></li>
-        <li><a href="#">NOS DESTINATIONS</a></li>
-        <li><a href="#">NOS IDÉES VOYAGES</a></li>
-        <li><a href="#">NOTRE ÉQUIPE</a></li>
-        <li><a href="#">TÉMOIGNAGE CLIENTS</a></li>
+             <!--burger menu-->
+          <div class="burger" id="burger">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+
+        <ul class="nav-left">
+              <li><a href="#">QUI SOMMES-NOUS ?</a></li>
+                <li><a href="#">NOS DESTINATIONS</a></li>
+                 <li><a href="#">NOS IDÉES VOYAGES</a></li>
+               <li><a href="#">NOTRE ÉQUIPE</a></li>
+            <li><a href="#">TÉMOIGNAGE CLIENTS</a></li>
         <li><a href="#">PAGE DE CONTACT</a></li> 
       </ul>
       <ul class="nav-right">
@@ -37,22 +45,16 @@
           <li><a href="#"><i class="fas fa-language"></i></a></li>
       </ul>
     </div>
-    <div class="burger-menu" id="burger">
-      <i class="fas fa-bars"></i>
-    </div>
-    
-
-
-   </header>
+ </header>
 
  <section class="section-text">
     <div class="profile-text">
-      <h1>"Votre prochain voyage commence ici"</h1>
+      <h1>"Votre prochain voyage commence ici..."</h1>
      </div>
      </section>
 
   <section class="carousel">
-  <div class="carousel">
+  <!-- <div class="carousel"> -->
     <div class="slider">
       <div class="slide"><img src="assets/image/SAFARI AAB.jpg" alt="slide 1"></div>
       <div class="slide"><img src="assets/image/USA AA.webp"alt="Slide 2"></div>
@@ -106,9 +108,21 @@
       </div>
      </div> 
     </section>
-
    
+           <script>
+                 const burger = document.getElementById('burger');
+                 const navLeft = document.querySelector('.nav-left');
+                    const navRight= document.querySelector('.nav-right');
+
+                     burger.addEventListener('click', ()  => {
+                     navLeft.classList.toggle('active');
+                     navRight.classList.toggle('active');
+                    burger.classList.toggle('toggle');
+
+  });
+</script>
+    
 
 
 </body>
-</html>.
+</html>
