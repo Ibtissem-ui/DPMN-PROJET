@@ -14,9 +14,9 @@
 <body>
    <header>
     <div class="haut-bar">
-      <div class="haut-item"><i class="fas fa-phone"></i> +33 000 000 000</div>
-      <div class="haut-item"><i class="fas fa-envelope"></i> evasionvoyage@gmail.com</div>
-      <div class="haut-item"><i class="fas fa-map-marker-alt"></i> 15 rue du 15 Novembre 67000</div>
+        <div class="haut-item"><i class="fas fa-phone"></i> +33 000 000 000</div>
+        <div class="haut-item"><i class="fas fa-envelope"></i> evasionvoyage@gmail.com</div>
+         <div class="haut-item"><i class="fas fa-map-marker-alt"></i> 15 rue du 15 Novembre 67000</div>
    </div>
 
     <div class="nav-bar">  
@@ -108,25 +108,23 @@
       </div>
      </div> 
     </section>
-    <footer>
-            <div class="haut-bar-mobile">
-          <div class="haut-item"><i class="fas fa-phone"></i> +33 000 000 000</div>
-          <div class="haut-item"><i class="fas fa-envelope"></i> evasionvoyage@gmail.com</div>
-          <div class="haut-item"><i class="fas fa-map-marker-alt"></i> 15 rue du 15 Novembre 67000</div>
-       </div>
-      
-    </footer>
-   
-           <script>
-                 const burger = document.getElementById('burger');
-                 const navLeft = document.querySelector('.nav-left');
-                    const navRight= document.querySelector('.nav-right');
+<footer>
+  <div class="footer">
+    <div class="haut-item"><i class="fas fa-phone"></i> +33 000 000 000</div>
+        <div class="haut-item"><i class="fas fa-envelope"></i> evasionvoyage@gmail.com</div>
+        <div class="haut-item"><i class="fas fa-map-marker-alt"></i> 15 rue du 15 Novembre 67000</div>
+     </div>
+</footer>
+             
+<script>
+  const burger = document.getElementById('burger');
+  const navLeft = document.querySelector('.nav-left');
+  const navRight= document.querySelector('.nav-right');
 
-                     burger.addEventListener('click', ()  => {
-                     navLeft.classList.toggle('active');
-                     navRight.classList.toggle('active');
-                    burger.classList.toggle('toggle');
-
+  burger.addEventListener('click', ()  => {
+  navLeft.classList.toggle('active');
+  navRight.classList.toggle('active');
+  burger.classList.toggle('toggle');
   });
 </script>
     
