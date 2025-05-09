@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; 
+    padding-left: 15px;  
+}
+.btn-accueil {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #00008B;
+    color: white;
+    padding: 16px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    } 
+ .btn-accueil:hover {
+   background-color: #0056b3;
+   }
+   .btn-accueil:active {
+    background-color: #ff8C00;
+    transform: translateY(2px);
+}
+h3{
+    margin-top: 20px;
+    padding:30px 
+}
+p{
+    padding: 30px;
+    text-align: justify;
+    line-height: 1.6;
+    text-justify: inter-word;
+ }
+ main img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+ img{
+    max-width: 100%;
+    height: auto;
+    margin-top:15px;
+ }   
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:100px auto 100px ;
+    height: 100vh;
+    width: 100%;
+    margin:0 auto;
+    color: white;
+}
+header{
+    background-color: #ff8c00;
+    grid-column-start: span 3;
+    color:black;
+}
+aside{
+    background-color:#00008b;
+    grid-column-start: span 1;
+}
+aside {
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .post {
+    max-width: 90%;
+  }
+
+main{
+    background-color: #d3d3d3;
+    grid-column-start: span 2;
+    color:black;
+}
+footer{
+    background-color: #ff8c00;
+    grid-column-start: span 3;
+    color:black;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    gap: 5px;                 
+    padding: 30px 20px; 
+   
+  }
+
+@media(max-width:768px){
+
+    .btn-accueil {
+    display: none;
+    }
+    .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 100px;
+
+    }
+    header,aside,main,footer{
+    grid-column-start: span 1;
+    }
+
+}
